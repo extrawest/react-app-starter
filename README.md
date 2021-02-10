@@ -31,6 +31,8 @@ react_app
     │ └── ...
     ├── hooks
     │ └── ...
+    ├── i18n
+    │ └── ...
     ├── layouts
     |   └── ...
     ├── pages
@@ -78,6 +80,7 @@ react_app
 * The **components** folder contains common reusable widgets
 * The **hocs** - contains High Order Components
 * The **hooks** - contains hooks
+* The **i18n** - contains languages json files
 * The **layouts** folder contains common page layouts and parts of pages
 * The **pages** folder contains all pages declaration
 * The **permissions** folder contains declaration permission rules
