@@ -14,6 +14,7 @@ import {
 import { AbilityContext } from 'permissions/Can';
 import ability from "permissions/ability";
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
+import AppIntlProvider from "hocs/AppIntlProvider";
 
 // Generate unique class name before all generation classes
 const generateClassName = createGenerateClassName({
@@ -34,8 +35,11 @@ const App = () => {
             {/* Material UI theme context Context */}
             <StylesProvider generateClassName={generateClassName} injectFirst={true}> 
               <ThemeProvider theme={theme}>
-                <CssBaseline />
-                <Routes />
+                {/* React-intl provider */}
+                <AppIntlProvider>
+                  <CssBaseline />
+                  <Routes />
+                </AppIntlProvider>
               </ThemeProvider>
             </StylesProvider>
           </AbilityContext.Provider>
