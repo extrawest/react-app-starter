@@ -2,19 +2,19 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistor, store } from "redux/store";
-import ReduxToastr from 'react-redux-toastr';
-import { CssBaseline, ThemeProvider } from '@material-ui/core';
-import theme from 'theme';
+import ReduxToastr from "react-redux-toastr";
+import { CssBaseline, ThemeProvider } from "@material-ui/core";
+import theme from "theme";
 import Spinner from "components/common/Spinner";
 import Routes from "routes";
+import AppIntlProvider from "hocs/AppIntlProvider";
 import {
   StylesProvider,
   createGenerateClassName,
 } from "@material-ui/core/styles";
-import { AbilityContext } from 'permissions/Can';
+import { AbilityContext } from "permissions/Can";
 import ability from "permissions/ability";
-import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
-import AppIntlProvider from "hocs/AppIntlProvider";
+import "react-redux-toastr/lib/css/react-redux-toastr.min.css";
 
 // Generate unique class name before all generation classes
 const generateClassName = createGenerateClassName({
@@ -27,13 +27,19 @@ const App = () => {
     // Redux store provider
     <Provider store={store}>
       {/* // Redux persistor gate */}
-      <PersistGate loading={<Spinner />} persistor={persistor}>
+      <PersistGate
+        loading={<Spinner />}
+        persistor={persistor}
+      >
         {/* Browser Router */}
         <BrowserRouter>
           {/* Permissions Casl Context */}
           <AbilityContext.Provider value={ability}>
             {/* Material UI theme context Context */}
-            <StylesProvider generateClassName={generateClassName} injectFirst={true}> 
+            <StylesProvider
+              generateClassName={generateClassName}
+              injectFirst={true}
+            >
               <ThemeProvider theme={theme}>
                 {/* React-intl provider */}
                 <AppIntlProvider>

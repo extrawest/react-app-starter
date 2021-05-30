@@ -5,7 +5,7 @@ import { useScrollTop } from "hooks/useScrollTop.js";
 import { Box } from "@material-ui/core";
 import { commonRoutes } from "./commonRoutes";
 import { privateRoutes } from "./privateRoutes";
-import PrivateRoute from 'hocs/PrivateRoute';
+import PrivateRoute from "hocs/PrivateRoute";
 
 const Routes = () => {
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { IntlProvider } from "react-intl";
 import messages_en from "../../i18n/en.json";
@@ -9,6 +9,7 @@ const AppIntlProvider = ( {
 }) => {
     const currentLanguage = useSelector((state) => state.language.selectedLanguage) ?? "en";
 
+    //if need to show currency use it else - delete
     const formats = {
         number: {
             CURRENCY: {
@@ -18,6 +19,7 @@ const AppIntlProvider = ( {
         },
     };    
 
+    // dictionary keys with translation
     const messages = {
         "en": messages_en,
     };
@@ -29,16 +31,13 @@ const AppIntlProvider = ( {
     }, [currentLanguage]);
 
     return (
-        <>
-            <IntlProvider
-                locale={currentLanguage}
-                messages={messages[currentLanguage]}
-                formats={formats}
-            >
-                {children}
-            </IntlProvider>
-        </>    
-        
+         <IntlProvider
+            locale={currentLanguage}
+            messages={messages[currentLanguage]}
+            formats={formats}
+        >
+            {children}
+        </IntlProvider>   
     );
 };
 

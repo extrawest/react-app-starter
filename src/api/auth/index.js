@@ -1,4 +1,4 @@
-import { authAxiosInstance } from '../index';
+import { authAxiosInstance } from "../index";
 
 export const register = (data) => {
     return authAxiosInstance.post(`/auth/register`, {

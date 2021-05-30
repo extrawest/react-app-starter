@@ -37,7 +37,7 @@ const refreshAuthLogic = (failedRequest) => {
         return Promise.resolve();
     })
     .catch( ( e ) => {
-        console.log( 'e', e );
+        console.error( "e", e );
     });
 };
 

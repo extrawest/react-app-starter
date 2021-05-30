@@ -4,7 +4,7 @@ import {
     UPDATE_FAILURE,
 } from "../types";
 import { errorNotification, successNotification } from "utils/notifications";
-import { updateUserInfo } from 'api/user';
+import { updateUserInfo } from "api/user";
 
 export const updateProfileStart = () => {
   return {

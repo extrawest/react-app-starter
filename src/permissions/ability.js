@@ -2,7 +2,7 @@ import { Ability, AbilityBuilder } from "@casl/ability";
 import { store } from "redux/store";
 import { roles } from "utils/types/roles";
 
-// Defines how to detect object's type
+// Defines how to detect object"s type
 function subjectName(item) {
   if (!item || typeof item === "string") {
     return item;

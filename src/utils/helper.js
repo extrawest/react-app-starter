@@ -1,6 +1,6 @@
 import AES from "crypto-js/aes";
-import CryptoJS from 'crypto-js';
-import { KEY } from './const';
+import CryptoJS from "crypto-js";
+import { KEY } from "./const";
 import dayjs from "dayjs";
 import jwtDecode from "jwt-decode";
 import isSameOrAfter from "dayjs/plugin/isSameOrAfter";

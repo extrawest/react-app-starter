@@ -18,7 +18,7 @@ import {
 import { encryptUserInfo } from "utils/helper";
 import { errorNotification, successNotification } from "utils/notifications";
 import { updateProfileFailure, updateProfileSuccess } from "redux/user/actions";
-import { login, register } from 'api/auth';
+import { login, register } from "api/auth";
 import { getUserInfo } from "api/user";
 
 
