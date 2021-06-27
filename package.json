@@ -17,6 +17,7 @@
     "axios-auth-refresh": "^3.0.0",
     "crypto-js": "^4.0.0",
     "dayjs": "^1.10.5",
+    "firebase": "^8.6.8",
     "formik": "^2.2.9",
     "jwt-decode": "^3.1.2",
     "lint-staged": "^11.0.0",
@@ -52,7 +53,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .js",
     "lint:fix": "eslint src --fix",
-    "extract-messages": "formatjs extract src/**/*.js* --out-file src/i18n/en.json"
+    "extract-messages": "formatjs extract src/**/*.js* --out-file src/i18n/en.json",
+    "deploy": "yarn build && firebase deploy"
   },
   "husky": {
     "hooks": {
