@@ -1,4 +1,4 @@
-## **React App Starter**
+## Extrawest React App Starter
 
 Simple boilerplate based on create-react-app with redux state management
 
