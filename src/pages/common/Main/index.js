@@ -1,5 +1,6 @@
 
-import { Button } from "@material-ui/core";
+import { Button, Link } from "@material-ui/core";
+import { Link as RouterLink } from "react-router-dom";
 import PageLayout from "layouts/PageLayout";
 import Greeting from "layouts/main/Greeting";
 import { useAbility } from "@casl/react";
@@ -24,6 +25,20 @@ const Main = () => {
                 onClick={() => toastr.success("The title", "The message")}
                 type="button">Toastr Success
             </Button>
+            <br/>
+            <Link
+                component={RouterLink}
+                to="/admin/login"
+            >
+                Login page
+            </Link>
+            <br/>
+            <Link
+                component={RouterLink}
+                to="/admin/register"
+            >
+                Register page
+            </Link>
         </PageLayout>
     );
 };

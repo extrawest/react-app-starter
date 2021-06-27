@@ -39,10 +39,11 @@ const RegisterForm = ({
           values
         }) => (
           <form onSubmit={handleSubmit}>
-            <Box sx={{ mb: 3 }}>
+            <Box mb={3}>
               <Typography
                 color="textPrimary"
                 variant="h2"
+                align="center"
               >
                 Create new account
               </Typography>
@@ -50,6 +51,7 @@ const RegisterForm = ({
                 color="textSecondary"
                 gutterBottom
                 variant="body2"
+                align="center"
               >
                 Use your email to create new account
               </Typography>
@@ -156,7 +158,7 @@ const RegisterForm = ({
                 {" "}
                 <Link
                   component={RouterLink}
-                  to="/login"
+                  to="admin/login"
                   variant="body1"
                 >
                   Sign in
