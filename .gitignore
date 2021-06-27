@@ -27,3 +27,10 @@ yarn-error.log*
 .eslintcache
 
 /translated
+
+/build
+/dist
+
+/.firebaserc
+/firebase.json
+/.firebase
