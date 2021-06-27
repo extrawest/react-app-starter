@@ -1,6 +1,16 @@
 ## Extrawest React App Starter
 
+![Maintaner](https://img.shields.io/badge/maintainer-extrawest.com-blue)
+![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/extrawest/flutter_web_app/graphs/commit-activity)
+![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)
+[![GitHub tag](https://img.shields.io/github/tag/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/tags/)
+
 Simple boilerplate based on create-react-app with redux state management
+
+## Demo
+
+[You can check a simple demo](https://react-starter-kit-29966.web.app/)
 
 ### Project structure 
 ```text
@@ -145,3 +155,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+Created by Extrawest Mobile Team
+[Extrawest.com](https://www.extrawest.com), 2021
+---
