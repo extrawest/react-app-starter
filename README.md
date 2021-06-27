@@ -1,10 +1,10 @@
 ## Extrawest React App Starter
 
 ![Maintaner](https://img.shields.io/badge/maintainer-extrawest.com-blue)
-![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/extrawest/flutter_web_app/graphs/commit-activity)
-![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)
-[![GitHub tag](https://img.shields.io/github/tag/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/tags/)
+![GitHub license](https://img.shields.io/github/license/extrawest/react-app-starter)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/extrawest/react-app-starter/graphs/commit-activity)
+![GitHub release](https://img.shields.io/github/v/release/extrawest/react-app-starter)
+[![GitHub tag](https://img.shields.io/github/v/tag/extrawest/react-app-starter)](https://github.com/extrawest/react-app-starter/tags/)
 
 Simple boilerplate based on create-react-app with redux state management
 
