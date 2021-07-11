@@ -1,9 +1,9 @@
 import { Box, Container, makeStyles, Typography } from "@material-ui/core";
-import { ReactComponent as Logo } from "assets/images/logos/footer-logo.svg";
 
 const useStyles = makeStyles(() => ({
     footer: {
-        paddingBottom: 90,
+        marginTop: "auto",
+        paddingBottom: 30,
         paddingTop: 90
     }
 }));
@@ -17,10 +17,9 @@ const Footer = () => {
             <Container>
                 <Box
                     display="flex"
-                    justifyContent="space-between"
+                    justifyContent="center"
                     alignItems="center"
                 >
-                    <Logo />
                     <Box>
                         <Typography>
                             © {date.getFullYear()} Copyright

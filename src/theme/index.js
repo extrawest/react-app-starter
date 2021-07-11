@@ -65,10 +65,10 @@ const theme = createMuiTheme({
   },
   palette: {
     primary: {
-      main: "#4A00E0",
+      main: "#FED85B",
     },
     secondary: {
-      main: "#8E2DE2",
+      main: "#FED85B",
     },
     background: {
       default: "#fff",
@@ -83,7 +83,7 @@ theme.overrides = {
       lineHeight: "20px",
       color: theme.palette.common.white,
       padding: "16px 40px",
-      background: "linear-gradient(93.72deg, #8E2DE2 9.41%, #4A00E0 86.1%)",
+      background: theme.palette.primary.main,
       borderRadius: 50,
       minWidth: "none",
       maxWitdh: "none",

@@ -131,16 +131,22 @@ const Header = () => {
             onClose={handleMobileMenuClose}
         >
             <MenuItem>
-                <IconButton aria-label="show 4 new mails" color="inherit">
-                    <Badge badgeContent={4} color="secondary">
+                <IconButton color="inherit">
+                    <Badge
+                        badgeContent={4}
+                        color="secondary"
+                    >
                         <MailIcon />
                     </Badge>
                 </IconButton>
                 <p>Messages</p>
             </MenuItem>
             <MenuItem>
-                <IconButton aria-label="show 11 new notifications" color="inherit">
-                    <Badge badgeContent={11} color="secondary">
+                <IconButton color="inherit">
+                    <Badge
+                        badgeContent={11}
+                        color="secondary"
+                    >
                         <NotificationsIcon />
                     </Badge>
                 </IconButton>
@@ -148,8 +154,6 @@ const Header = () => {
             </MenuItem>
             <MenuItem onClick={handleProfileMenuOpen}>
                 <IconButton
-                    aria-label="account of current user"
-                    aria-controls="primary-search-account-menu"
                     aria-haspopup="true"
                     color="inherit"
                 >
@@ -161,8 +165,11 @@ const Header = () => {
     );
 
     return (
-        <div className={classes.grow}>
-            <AppBar position="static">
+        <div >
+            <AppBar
+                position="static"
+                className={classes.grow}
+            >
                 <Toolbar>
                     <IconButton
                         edge="start"
@@ -172,7 +179,11 @@ const Header = () => {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography className={classes.title} variant="h6" noWrap>
+                    <Typography
+                        className={classes.title}
+                        variant="h6"
+                        noWrap
+                    >
                         Material-UI
                     </Typography>
                     <div className={classes.search}>
@@ -190,13 +201,19 @@ const Header = () => {
                     </div>
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <IconButton aria-label="show 4 new mails" color="inherit">
-                            <Badge badgeContent={4} color="secondary">
+                        <IconButton color="inherit">
+                            <Badge
+                                badgeContent={4}
+                                color="secondary"
+                            >
                                 <MailIcon />
                             </Badge>
                         </IconButton>
-                        <IconButton aria-label="show 17 new notifications" color="inherit">
-                            <Badge badgeContent={17} color="secondary">
+                        <IconButton color="inherit">
+                            <Badge
+                                badgeContent={17}
+                                color="secondary"
+                            >
                                 <NotificationsIcon />
                             </Badge>
                         </IconButton>
