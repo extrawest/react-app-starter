@@ -88,6 +88,14 @@
           "avoidEscape": true,
           "allowTemplateLiterals": true
         }
+      ],
+      "react/jsx-max-props-per-line": [
+        "error",
+        {
+          "maxSingular": 1,
+          "maxMulti": 1,
+          "when": "always"
+        }
       ]
     }
   },
