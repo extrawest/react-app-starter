@@ -1,5 +1,38 @@
 {
+  "createAnAccountText": {
+    "defaultMessage": "Create an account"
+  },
+  "dontHaveAccountText": {
+    "defaultMessage": "Don&apos;t have an account?"
+  },
   "greeting": {
     "defaultMessage": "Greeting!"
+  },
+  "haveAnAccount": {
+    "defaultMessage": "Have an account?"
+  },
+  "iHaveReadThe": {
+    "defaultMessage": "I have read the"
+  },
+  "loginTitle": {
+    "defaultMessage": "Login"
+  },
+  "signInNowText": {
+    "defaultMessage": "Sign in now"
+  },
+  "signInText": {
+    "defaultMessage": "Sign in"
+  },
+  "signUpNowText": {
+    "defaultMessage": "Sign up now"
+  },
+  "signUpText": {
+    "defaultMessage": "Sign up"
+  },
+  "termsAndConditions": {
+    "defaultMessage": "Terms and Conditions"
+  },
+  "useYourEmailText": {
+    "defaultMessage": "Use your email to create new account"
   }
 }

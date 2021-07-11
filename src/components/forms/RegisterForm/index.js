@@ -1,6 +1,7 @@
 import { Link as RouterLink } from "react-router-dom";
 import * as Yup from "yup";
 import { Formik } from "formik";
+import { useIntl } from "react-intl";
 import {
     Box,
     Button,
@@ -15,6 +16,44 @@ const RegisterForm = ({
   onSubmit,
   initialValues
 }) => {
+
+  const intl = useIntl();
+
+  const createAnAccountText = intl.formatMessage({
+    id: "createAnAccountText",
+    defaultMessage: "Create an account"
+  });
+
+  const useYourEmailText = intl.formatMessage({
+    id: "useYourEmailText",
+    defaultMessage: " Use your email to create new account"
+  });
+
+  const signUpNowText = intl.formatMessage({
+    id: "signUpNowText",
+    defaultMessage: "Sign up now"
+  });
+
+  const haveAnAccount = intl.formatMessage({
+    id: "haveAnAccount",
+    defaultMessage: "Have an account?"
+  });
+
+  const signInText = intl.formatMessage({
+    id: "signInText",
+    defaultMessage: "Sign in"
+  });
+
+  const termsAndConditions = intl.formatMessage({
+    id: "termsAndConditions",
+    defaultMessage: "Terms and Conditions"
+  });
+  
+  const iHaveReadThe = intl.formatMessage({
+    id: "iHaveReadThe",
+    defaultMessage: "I have read the"
+  });
+
   return (
     <Formik
         initialValues={initialValues}
@@ -45,7 +84,7 @@ const RegisterForm = ({
                 variant="h2"
                 align="center"
               >
-                Create new account
+                {createAnAccountText}
               </Typography>
               <Typography
                 color="textSecondary"
@@ -53,7 +92,7 @@ const RegisterForm = ({
                 variant="body2"
                 align="center"
               >
-                Use your email to create new account
+                {useYourEmailText}
               </Typography>
             </Box>
             <TextField
@@ -120,16 +159,16 @@ const RegisterForm = ({
                 color="textSecondary"
                 variant="body1"
               >
-                I have read the
+                {iHaveReadThe}
                 {" "}
                 <Link
                   color="primary"
                   component={RouterLink}
                   to="#"
                   underline="always"
-                  variant="h6"
+                  variant="body1"
                 >
-                  Terms and Conditions
+                  {termsAndConditions}
                 </Link>
               </Typography>
             </Box>
@@ -146,7 +185,7 @@ const RegisterForm = ({
                 type="submit"
                 variant="contained"
               >
-                Sign up now
+                {signUpNowText}
               </Button>
             </Box>
             <Box mt={2}>
@@ -154,14 +193,14 @@ const RegisterForm = ({
                 color="textSecondary"
                 variant="body1"
               >
-                Have an account?
+                {haveAnAccount}
                 {" "}
                 <Link
                   component={RouterLink}
                   to="admin/login"
                   variant="body1"
                 >
-                  Sign in
+                  {signInText}
                 </Link>
               </Typography>
             </Box>

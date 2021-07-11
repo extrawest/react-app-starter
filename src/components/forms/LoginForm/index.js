@@ -1,6 +1,7 @@
 import { Link as RouterLink } from "react-router-dom";
 import * as Yup from "yup";
 import { Formik } from "formik";
+import { useIntl } from "react-intl";
 import {
     Box,
     Button,
@@ -13,6 +14,29 @@ const LoginForm = ({
   initialValues,
   onSubmit
 }) => {
+
+  const intl = useIntl();
+
+  const loginTitle = intl.formatMessage({
+    id: "loginTitle",
+    defaultMessage: "Login"
+  });
+  
+  const signInNowText = intl.formatMessage({
+    id: "signInNowText",
+    defaultMessage: "Sign in now"
+  });
+
+  const signUpText = intl.formatMessage({
+    id: "signUpText",
+    defaultMessage: "Sign up"
+  });
+
+  const dontHaveAccountText = intl.formatMessage({
+    id: "dontHaveAccountText",
+    defaultMessage: "Don&apos;t have an account?"
+  });
+
   return (
     <Formik
       initialValues={initialValues}
@@ -37,7 +61,7 @@ const LoginForm = ({
               align="center"
               variant="h2"
             >
-              Login
+              {loginTitle}
             </Typography>
           </Box>
           <TextField
@@ -74,7 +98,7 @@ const LoginForm = ({
               type="submit"
               variant="contained"
             >
-              Sign in now
+              {signInNowText}
             </Button>
           </Box>
           <Box mt={2}>
@@ -82,14 +106,14 @@ const LoginForm = ({
               color="textSecondary"
               variant="body1"
             >
-              Don&apos;t have an account?
+              {dontHaveAccountText}
               {" "}
               <Link
                 component={RouterLink}
                 to="/admin/register"
                 variant="body1"
               >
-                Sign up
+                {signUpText}
               </Link>
             </Typography>
           </Box>
